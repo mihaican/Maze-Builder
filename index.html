@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <head>
+		<link rel="stylesheet" href="maze.css">
+		
+   </head>
+   <body ondragstart="return false;" ondrop="return false;" >
+      <div class="sidebar" id="sidebar">
+         <div class="content">
+            <div><button id="erase" onclick="erase();">Sterge</button></div>
+            <div><button id="start" onclick="start();">Start</button></div>
+            <div><button id="finish" onclick="finish();">Finish </button></div>
+            <div><button id="portal" onclick="portal();">Portal</button></div>
+            <div><button id="run" onclick="solve();">  Run    </button></div>
+            <div><button id="clear" onclick="clean();"> Curata  </button></div>
+            <input type="checkbox" id="dm" onclick="dark_mode()">
+            <label for="dm">Mod intunecat</label>
+            <div><input type="checkbox" id="rainbow" onclick="rainbow()">
+               <label for="rainbow">Mod curcubeu</label>
+            </div>
+            <div><input type="checkbox" id="distances" onclick="show_distances=1">
+               <label for="distances">Distante</label>
+            </div>
+			<div><input type="checkbox" id="animations" onclick="show_anim=1;">
+               <label for="rainbow">Animatii</label>
+            </div>
+         </div>
+         <img src="rainbow.png" width="200px" height="5px">  
+      </div>
+      <h1 id="selected" style="margin: auto; width: 500px; padding: 10px; position:relative; left: 200px;"> Build a Maze :) </h1>
+	  <script type="text/javascript" src="maze.js"></script>
+	  
+   </body>
+</html>
